@@ -1,11 +1,31 @@
-const device__period_time_item = document.querySelectorAll(".device__period-time-item")
+const device__period_time_item = document.querySelectorAll(".device__period-time-button");
+      device_time_interval_before = document.querySelector(".device__time-interval-before");
+      device_time_interval_after = document.querySelector(".device__time-interval-after");
 
-device__period_time_item.forEach(function (value) {
-    value.addEventListener('click', function (e) {
-        if (!e.target.classList.contains("device__period-time-item_active")) {
-            Array.from(device__period_time_item).find(element => element.classList.contains("device__period-time-item_active")).classList.remove("device__period-time-item_active")
-            e.target.classList.add("device__period-time-item_active")
+device__period_time_item.forEach(function (elem) {
+    elem.addEventListener('click', function (e) {
+        if (!e.target.classList.contains("device__period-time-button_active")) {
+            Array.from(device__period_time_item).find(element => element.classList.contains("device__period-time-button_active")).classList.remove("device__period-time-button_active")
+            e.target.classList.add("device__period-time-button_active")
         };
+
+        let period_of_time = e.target.value;
+        let date_before = new Date(device_time_interval_before.value)
+        let date_after = new Date(device_time_interval_after.value)
+
+        if(e.target.value[0] == "D"){
+            date_after = date_before;
+            date_after.setDate(+date_before.getDate() + +period_of_time.slice(1));
+            date_after.setHours(+date_before.getHours() + 3);
+            device_time_interval_after.value = date_after.toISOString().slice(0,16);
+        }
+
+        if(e.target.value[0] == "M"){
+            date_after = date_before;
+            date_after.setMonth(+date_before.getMonth() + +period_of_time.slice(1))
+            date_after.setHours(+date_before.getHours() + 3);
+            device_time_interval_after.value = date_after.toISOString().slice(0,16);
+        }
     });
 });
 

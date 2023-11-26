@@ -63,23 +63,17 @@
                     </div>
                 </div>
                 <div class="device__time-interval">
-                    <div class="device__time-interval-before">
-                        <input type="text" placeholder="07.10.2021, 10:55">
-                        <img src="./icons/analytics/calendar.svg" alt="">
-                    </div>
+                    <input class="device__time-interval-before" type="datetime-local" value="2021-10-07T10:55">
                     <img class="device__time-interval-arrow" src="./icons/analytics/arrow.svg" alt="arrow">
-                    <div class="device__time-interval-after">
-                        <input type="text" placeholder="21.10.2021, 10:55">
-                        <img src="./icons/analytics/calendar.svg" alt="">
-                    </div>
+                    <input class="device__time-interval-after" type="datetime-local" value="2021-10-21T10:55">
                 </div>
                 <div class="device__period-time">
-                    <div class="device__period-time-item">День</div>
-                    <div class="device__period-time-item">Неделя</div>
-                    <div class="device__period-time-item device__period-time-item_active">2 недели</div>
-                    <div class="device__period-time-item">Месяц</div>
-                    <div class="device__period-time-item">3 месяца</div>
-                    <div class="device__period-time-item">Полгода</div>
+                    <button value="D1" class="device__period-time-button">День</button>
+                    <button value="D7" class="device__period-time-button">Неделя</button>
+                    <button value="D14" class="device__period-time-button device__period-time-button_active">2 недели</button>
+                    <button value="M1" class="device__period-time-button">Месяц</button>
+                    <button value="M3" class="device__period-time-button">3 месяца</button>
+                    <button value="M6" class="device__period-time-button">Полгода</button>
                 </div>
                 <div class="device__work-table">
                     <div class="device__work-table-header">
