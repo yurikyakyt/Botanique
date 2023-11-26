@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="./main.html" class="header__logo">
+            <img src="./icons/logo.svg" alt="Botanique_logo">
+        </a>
+        <div class="header__menu">
+			<a href="./main.html">
+				<div class="header__main">Главная</div>
+			</a>
+            <a href="./analytics.html">
+				<div class="header__analytics header__menu-element_active">Аналитика</div>
+			</a>
+        </div>
+        <div class="header__account">
+            <img src="./pictures/User.jpg" alt="User_avatar">
+        </div>
+    </header>
+
+    <section class="device">
+        <div class="device__wrapper">
+            <div class="device__header">
+                <div class="device__header-left">
+                    <img src="./pictures/analytics/device_pic.jpg" alt="unknown device" class="device__header-img">
+                    <div class="device__text">
+                        <div class="device__name">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</div>
+                        <div class="device__description">S1.4.I14-9.001 · 00-024004</div>
+                    </div>
+                </div>
+                <div class="device__header-right">
+                    <select class="device__status">
+                        <option value="free">Свободен</option>
+                        <option value="busy">В работе</option>
+                    </select>
+                    <img src="./icons/analytics/red_heart.svg" alt="favorite" class="device__favorites">
+                    <img src="./icons/analytics/settings.svg" alt="settings" class="device__settings">
+                </div>
+            </div>
+            <div class="device__body">
+                <div class="device__tools">
+                    <select name="" id="" class="device__work">
+                        <option value="device work">Работа прибора</option>
+                        <option value="blabla">Что-то</option>
+                    </select>
+                    <div class="device__tools-left">
+                        <div class="device__tools-alarm">
+                            <img src="./icons/analytics/alarm.svg" alt="alarm">
+                        </div>
+                        <div class="device__tools-pdf">
+                            <div class="device__tools-pdf-text">Сохранить PDF</div>
+                            <img class="device__tools-pdf-ellipsis" src="./icons/analytics/vertical_ellipsis.svg" alt="vertical ellipsis">
+                        </div>
+                    </div>
+                </div>
+                <div class="device__time-interval">
+                    <div class="device__time-interval-before">
+                        <input type="text" placeholder="07.10.2021, 10:55">
+                        <img src="./icons/analytics/calendar.svg" alt="">
+                    </div>
+                    <img class="device__time-interval-arrow" src="./icons/analytics/arrow.svg" alt="arrow">
+                    <div class="device__time-interval-after">
+                        <input type="text" placeholder="21.10.2021, 10:55">
+                        <img src="./icons/analytics/calendar.svg" alt="">
+                    </div>
+                </div>
+                <div class="device__period-time">
+                    <div class="device__period-time-item">День</div>
+                    <div class="device__period-time-item">Неделя</div>
+                    <div class="device__period-time-item device__period-time-item_active">2 недели</div>
+                    <div class="device__period-time-item">Месяц</div>
+                    <div class="device__period-time-item">3 месяца</div>
+                    <div class="device__period-time-item">Полгода</div>
+                </div>
+                <div class="device__work-table">
+                    <div class="device__work-table-header">
+                        <div class="device__work-table-header-start">Начало</div>
+                        <div class="device__work-table-header-work-type">Тип работ</div>
+                        <div class="device__work-table-header-works">Работы</div>
+                        <div class="device__work-table-header-results">Результат</div>
+                        <div class="device__work-table-header-user">Пользователь</div>
+                    </div>
+                    <div class="device__work-table-body">
+                        <div class="device__work-table-item">
+                            <div class="device__work-table-item-start">09.10.2021, 15:46</div>
+                            <div class="device__work-table-item-work-type"><span>В работе</span><br>Измерение</div>
+                            <div class="device__work-table-item-works">
+                                <span>Образец/серия:</span> 000100057935_170000010325_0000251849
+                            </div>
+                            <div class="device__work-table-item-results">
+                                <img src="./icons/analytics/check.svg" alt="">
+                            </div>
+                            <div class="device__work-table-item-user">morozovava</div>
+                        </div>
+                        <div class="device__work-table-item">
+                            <div class="device__work-table-item-start">12.10.2021, 12:17</div>
+                            <div class="device__work-table-item-work-type"><span>В работе</span><br>Калибровка</div>
+                            <div class="device__work-table-item-works">
+                                <span>Номер колонки:</span> Колонка 2<br>
+                                <span>Образец:</span> Образец 2<br>
+                                <span>Образец:</span> образец 1<br>
+                                <span>Метод:</span> метов тестовый<br>
+                                <span>Номер колонки:</span> Колонка 1
+                            </div>
+                            <div class="device__work-table-item-results">
+                                Промывка с указанием вещества: Вещество<br>
+                                Комментарий:<br>
+                                тест успешности
+                                <img src="./icons/analytics/check.svg" alt="">
+                            </div>
+                            <div class="device__work-table-item-user">morozovava</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="./js/analytics.js"></script>
+</body>
+</html>

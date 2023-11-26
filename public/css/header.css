@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 48px;
+    padding: 0px 24px 0px 24px;
+    background-color: #fff;
+}
+
+.header__logo img{
+    width: 132px;
+    height: 48px;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu div{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    width: 164px;
+    height: 48px;
+    text-align: center;
+    color: #00000060;
+}
+.header__menu div.header__menu-element_active{
+    color: #23B04A;
+    border-bottom: 2px solid #23B04A;
+}
+
+.header__account img{
+    width: 32px;
+    height: 32px;
+}

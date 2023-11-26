@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="./main.html" class="header__logo">
+            <img src="./icons/logo.svg" alt="Botanique_logo">
+        </a>
+        <div class="header__menu">
+			<a href="./main.html">
+				<div class="header__main header__menu-element_active">Главная</div>
+			</a>
+            <a href="./analytics.html">
+				<div class="header__analytics">Аналитика</div>
+			</a>
+        </div>
+        <div class="header__account">
+            <img src="./pictures/User.jpg" alt="User_avatar">
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="search__wrapper">
+			<input type="search" class="search__main" placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др.">
+			<img class="search__qr" src="./icons/main/qr_code_scanner.svg" alt="qr_code_scanner">
+		</div>
+    </section>
+
+    <section class="favorite">
+        <div class="favorite__wrapper">
+            <div class="favorite__header">
+                <img src="./icons/main/heart.svg" alt="Heart_icon">
+                <h1>Любимые приборы</h1>
+            </div>
+            <div class="favorite__list">
+                <div class="favorite__list-header">
+                    <div class="favorite__list-header-name">Название</div>
+                    <div class="favorite__list-header-status">Статус</div>
+                </div>
+                <div class="favorite__list-main">
+                    <div class="favorite__list-item">
+                        <img src="./pictures/main/pH.jpg" alt="" class="favorite__list-item-image">
+                        <div class="favorite__list-item-name">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</div>
+                        <select class="favorite__list-item-status" name="" id="">
+                            <option value="free">Свободен</option>
+                            <option value="busy">В работе</option>
+                        </select>
+                        <img src="./icons/main/notifications.svg" alt="" class="favorite__list-item-notifications">
+                    </div>
+                    <div class="favorite__list-item">
+                        <img src="./pictures/main/Спектр.jpg" alt="" class="favorite__list-item-image">
+                        <div class="favorite__list-item-name">Спектрофотометр Varian, Inc Cary 50 Bio</div>
+                        <select class="favorite__list-item-status" name="" id="">
+                            <option value="free">Свободен</option>
+                            <option value="busy">В работе</option>
+                        </select>
+                        <img src="./icons/main/notifications.svg" alt="" class="favorite__list-item-notifications">
+                    </div>
+                    <div class="favorite__list-item">
+                        <img src="./pictures/main/Титратор.jpg" alt="" class="favorite__list-item-image">
+                        <div class="favorite__list-item-name">Титратор</div>
+                        <select class="favorite__list-item-status" name="" id="">
+                            <option value="free">Свободен</option>
+                            <option value="busy">В работе</option>
+                        </select>
+                        <img src="./icons/main/notifications.svg" alt="" class="favorite__list-item-notifications">
+                    </div>
+                    <div class="favorite__list-item">
+                        <img src="./pictures/main/Коагулометр.jpg" alt="" class="favorite__list-item-image">
+                        <div class="favorite__list-item-name">Коагулометр Tcoag, KC 4 Delta</div>
+                        <select class="favorite__list-item-status" name="" id="">
+                            <option value="free">Свободен</option>
+                            <option value="busy">В работе</option>
+                        </select>
+                        <img src="./icons/main/notifications.svg" alt="" class="favorite__list-item-notifications">
+                    </div>
+                    <div class="favorite__list-item">
+                        <img src="./pictures/main/Коагулометр.jpg" alt="" class="favorite__list-item-image">
+                        <div class="favorite__list-item-name">Коагулометр Tcoag, KC 4 Delta</div>
+                        <select class="favorite__list-item-status" name="" id="">
+                            <option value="free">Свободен</option>
+                            <option value="busy">В работе</option>
+                        </select>
+                        <img src="./icons/main/notifications.svg" alt="" class="favorite__list-item-notifications">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
