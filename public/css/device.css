@@ -251,6 +251,8 @@
     font-size: 14px;
     line-height: 20px;
     color: #00000060;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .device__work-table-item-user{
@@ -279,7 +281,7 @@
 
 .device__work-table-item{
     display: flex;
-    height: 125px;
+    min-height: 125px;
     border-bottom: 1px solid #21212108;
     text-overflow: ellipsis;
 }
